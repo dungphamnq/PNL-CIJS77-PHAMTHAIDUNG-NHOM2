@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import DashBoard from "./components/Dashboard";
+import Login from "./components/Login";
+import FailLogin from "./components/FailLogin";
+import "./index.css";
 
-export default () => (
-  <>
-    <h1>Welcome to React Vite Micro App!</h1>
-    <p>Hard to get more minimal than this React app.</p>
-  </>
-);
+export default function App() {
+  const [isLogin, setIsLogin] = useState(true);
+  const [isFailLogin, setIsFailLogin] = useState(false);
+
+  return (
+    <>
+      <h1>Welcome to React Vite Micro App!</h1>
+      {isLogin === true ? <Login setIsLogin={setIsLogin} /> : null}
+      {/* if (isLogin === true) {<Login setIsLogin={setIsLogin}} else {null} */}
+      {isLogin === false ? <DashBoard /> : null}
+      {isFailLogin === true ? <FailLogin /> : null}
+    </>
+  );
+}
