@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 
-export default function Login(props) {
+const Login = (props) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -61,3 +61,5 @@ export default function Login(props) {
     </>
   );
 }
+
+export default Login;

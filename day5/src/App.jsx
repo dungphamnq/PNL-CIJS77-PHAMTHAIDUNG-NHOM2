@@ -4,7 +4,7 @@ import Login from "./components/Login";
 import FailLogin from "./components/FailLogin";
 import "./index.css";
 
-export default function App() {
+const App = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isFailLogin, setIsFailLogin] = useState(false);
 
@@ -14,7 +14,9 @@ export default function App() {
       {isLogin === true ? <Login setIsLogin={setIsLogin} /> : null}
       {/* if (isLogin === true) {<Login setIsLogin={setIsLogin}} else {null} */}
       {isLogin === false ? <DashBoard /> : null}
-      {isFailLogin === true ? <FailLogin /> : null}
+      {isFailLogin === true ? <FailLogin  /> : null}
     </>
   );
 }
+
+export default App;

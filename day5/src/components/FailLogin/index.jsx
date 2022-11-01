@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function FailLogin() {
+const FailLogin = () => {
   return <h1>Fail login</h1>;
 }
+
+export default FailLogin;
