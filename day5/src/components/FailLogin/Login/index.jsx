@@ -45,7 +45,7 @@ const Login = (props) => {
           />
           <button type="submit">Login</button>
           <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
+            <input type="checkbox"  name="remember" /> Remember
             me
           </label>
         </div>

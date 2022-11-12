@@ -14,7 +14,7 @@ const App = () => {
       {isLogin === true ? <Login setIsLogin={setIsLogin} /> : null}
       {/* if (isLogin === true) {<Login setIsLogin={setIsLogin}} else {null} */}
       {isLogin === false ? <DashBoard /> : null}
-      {isFailLogin === true ? <FailLogin  /> : null}
+      {/* {isFailLogin === true ? <FailLogin  /> : null} */}
     </>
   );
 }
